@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Property Self Assessment Form </title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- form.js for create a new entery to DB -->
+    <script type="text/javascript" src="./js/form.js"></script>
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Property Tax Self Access - Registration Form</h2>
+                </div>
+                <div class="card-body">
+                  
+
+
+                        <div class="form-row">
+                            <div class="name">Ulb Name</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" id="UlbName" type="text" name="company" placeholder="Enter ULB Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Ward/Mohalla</div>
+                            
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <input class="input--style-5" type="text" id="WardMohalla" name="company" placeholder="Enter Ward/Mohalla">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Owner Name</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" id="OwnerName" name="company" placeholder="Enter Owner Name">
+                                </div>
+                            </div>
+                        </div>
+                          <div class="form-row">
+                            <div class="name">Father Name</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" id="FatherName"  name="company" placeholder="Enter Father Name">
+                                </div>
+                            </div>
+                        </div>
+                          <div class="form-row">
+                            <div class="name">Door No./Address</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <textarea style="width:100%" class="input--style-5" id="Address"  type="text" name="company" placeholder="Enter Door No./ Address"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="form-row">
+                            <div class="name">Aadhar Number</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="company" id="AadharNumber"  placeholder="Enter Aadhar Number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Mobile Number</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="Number" name="company" id="MobileNumber" placeholder ="Enter Mobile Number">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-row">
+                            <div class="name">Alternate Mobile Number</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="Number" name="company" id="AlternateMobile"  placeholder ="Enter Alternate Mobile Number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Property Details</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <textarea style="width:100%" class="input--style-5" type="text" id="PropertyDetails"  name="company" placeholder ="Enter Property Details"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Property Area Details</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="company" id="PropertyArea"  placeholder ="Enter Property Area Details">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Area of Vaccant Land</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="company" id="AreaVaccantLand"  placeholder ="Enter Area of Vaccant Land">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Pakka Bhawan Located Near Street</div>
+                            <div class="value">
+                                <div class="input-group">
+                                 <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject" tabindex="-1" id="PakkaBhawanNearStreet" class="select2-hidden-accessible" aria-hidden="true">
+                                            <option disabled="disabled" selected="selected">Select Location</option>
+                                            <option>Below 30ft</option>
+                                            <option>30-40ft</option>
+                                            <option>40-50ft</option>
+                                            <option>50-60ft</option>
+                                            <option>Above 60ft</option>
+                                        </select><span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" style="width: 58px;">
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="name">Property Floor Details</h3><br>
+                        <div>
+                           
+                            <div class="value">
+                                
+                                  <div class="row" style="background: #bfc4c8;">
+                    <div class="col-3" style=" margin: 10px; ">Basement</div>
+                  <div class="col-9">
+                    <input type="text" class="form-control input--style-5" id="Basement"  placeholder="Enter Basement Details">
+                  </div>
+                   <div></div><br>
+
+                  <div class="col-3"style=" margin: 10px; ">Ground Floor</div>
+                  <div class="col-9">
+                    
+                    <input type="text" class="form-control input--style-5" id="GroundFloor"  placeholder="Enter Ground Floor Details">
+                  </div> <br>
+                                  <div class="col-3" style=" margin: 10px; ">First Floor</div>
+                  <div class="col-9">
+                    <input type="text" class="form-control input--style-5" id="FirstFloor"  placeholder="Enter First Floor Details">
+                  </div>
+                  <div class="col-3" style=" margin: 10px; ">Second Floor</div>
+                  <div class="col-9">
+                    <input type="text" class="form-control input--style-5" id="SecondFloor"  placeholder="Enter Second Floor Details">
+                  </div>
+                  <div class="col-3" style=" margin: 10px; ">Others</div>
+                  <div class="col-9">
+                    <input type="text" class="form-control input--style-5" id="OtherFloor" placeholder="Enter Others Floor Details">
+                  </div>
+                   <div class="col-3" style=" margin: 10px; "></div>
+                </div><br>
+                                
+                            </div>
+                        </div><br><br>
+
+
+
+                        <div class="form-row">
+                            
+                            <h5><b>Covered Area of Property(Non-Residential)</b></h5><br>
+                            
+                                  <input class="input--style-5" type="text" name="company" id="CoveredArea"  placeholder ="Enter Covered Area of Property(Non-Residential)">
+                                
+                        </div>
+
+
+                        <div class="form-row">
+                            
+                            <h5><b>Carpet Area of Property</b></h5><br>
+                           
+                                    <input class="input--style-5 " type="text" name="company" id="CarpetArea"  placeholder ="Enter Carpet Area of Property">
+                                
+                        </div>
+                        <div class="form-row">
+                            <h5><b>Monthly Rent for Non-Residential Property By Municipal Commissioner</b></h5>
+                            
+                                 <input class="input--style-5" type="text" name="company" id="MonthlyRentByCommissioner" placeholder ="Enter Monthly Rent By Municipal Commissioner">
+                               
+                        </div>
+                        <div class="form-row">
+                             <h5><b>Coefficient in Relation to the rate of Non-residential Property prescribed by the Rules.</b></h5>
+                           
+                                    <input class="input--style-5" type="text" name="company" id="RateByRule"  placeholder ="Coefficient in Relation to the rate of Non-residential Property">
+    
+                        </div>
+                        <div class="form-row">
+                             <h5><b>Net Annual Value of Non-Residential Property<br>(12 x Fixed minimum monthly Rate x Cofficient in Relation into Covered area of Non-Residential Property)</b></h5>
+                            <input class="input--style-5" type="text" name="company" id="NetAnnualValue" placeholder ="Net Annual Vale of Non-Residential Property">
+                        </div>
+                         <div class="form-row">
+                             <h5><b>General Tax of Non-Residential Property<br>(Net Annual value of Non-Residential Property x General tax / 100)</b></h5>
+                            
+                                    <input class="input--style-5" type="text" name="company" id="GeneralTax"  placeholder ="General Tax of Non-Residential Property">
+                               
+                        </div>
+                        <div class="form-row">
+                             <h5><b>Total General Tax of Non-Residential Property(in Rupees)</b></h5>
+                            
+                                    <input class="input--style-5" type="text" name="company" id="TotalGeneralTax"  placeholder ="Total General Tax of Non-Residential Property">
+                        </div>
+
+                         <div class="form-row">
+                            <h5><b>Bank Account Number of Owner</b></h5>
+                           <input class="input--style-5 " type="text" name="company" id="OwnerBankAccount"  placeholder="Enter Bank Account Number of Owner">
+                        </div>
+                       <!--  <div class="form-row">
+                        <h5><b>Enter Mobile Number</b></h5>
+                        <input class="input--style-5" style="margin: 5px;" type="Number" name="email" placeholder="Enter Mobile Number">
+                        <!-- <input class="input--style-5" style="margin: 5px;" type="email" name="email" placeholder="Verify OTP"> -->
+
+                        <!-- <button class="btn btn--radius-2 btn--red" type="submit">OTP</button> 
+                        </div> -->
+
+                          <div class="form-row">
+                            <div class="name">Attached Documents</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <label for="myfile">Select a file(Property Image):</label><br>
+                                    <input type="file" id="PropertyImage" name="myfile">
+                                    <label for="myfile">Select a file(Map Location Screenshort):</label><br>
+                                    <input type="file" id="MapLocationImage" name="myfile">
+                                    <label for="myfile">Select a file(Owner Signature):</label><br>
+                                    <input type="file" id="OwnerSignatureImage" name="myfile">
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+
+
+                            <button class="btn btn--radius-2 btn--red" id="saveData" type="submit">Submit</button>
+                        </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
